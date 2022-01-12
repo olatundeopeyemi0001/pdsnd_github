@@ -16,7 +16,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     #--requesting user to add city
     while True:
         city = input ('would you like to see data for Chicago, Newyork or Washington: ').lower()
@@ -130,7 +130,7 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # TO DO: display total travel time
-    total_travel_time = df['Trip Duration'].sum
+    total_travel_time = df['Trip Duration'].sum()
     print ('\nThe Total travel time of the duration is: {} seconds.'.format(total_travel_time))
 
     # TO DO: display mean travel time // mean trvavel talks about the mean average time calculated from the entire time date
