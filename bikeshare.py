@@ -26,10 +26,10 @@ def get_filters():
             break
     
 
-    # TO DO: get user input for month (all, january, february, ... , june)
+    # get user input for month (all, january, february, ... , june)
 
     while True:
-        month = input('\nkindly specify month of choice in form of an integer with /  Jan ==> 1, Feb ==> 2 , etc. ').lower()
+        month = input('\nkindly specify month of choice in form of an integer with /  Jan ==> 1, Feb ==> 2 , or all. ').lower()
         if month not in ('1' , '2' , '3' , '4' ,'5' , ' 6' , 'all'):
             print ("\nOuch! that's not available at the moment , do check your input or select another month again.")
             
