@@ -179,7 +179,7 @@ def user_stats(df):
         
 def display_data_request(df):
     """ displays user request on bikeshare data"""
-        
+    pd.set_option('display.max_columns',200)  #use this line of code at the start of this function to enable pandas to display all the columns in your dataframe when printing.
     view_data = input('\nwould you be willing to view 10 rows of individual trip data? enter yes or no\n').lower()
     start_loc = 0
     while (view_data != 'no'):
