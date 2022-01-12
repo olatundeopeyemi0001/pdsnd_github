@@ -35,7 +35,7 @@ def get_filters():
             
         else:
             break        
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+    # get user input for day of week (all, monday, tuesday, ... sunday)
     #Asking the user for day of the week 
     while True:
         day = input ('Kindly pick your day of the week OR all: ').lower()
